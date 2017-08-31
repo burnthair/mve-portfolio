@@ -14,13 +14,13 @@
     <div class="KW_progressContainer">
       <div class="KW_progressBar"></div>
     </div>
-    <div class="side-nav-arrow">&#8608<span class="side-nav-link">top</span></div>
-    <div class="side-nav-arrow">&#8608<span class="side-nav-link">about</span></div>
-    <div class="side-nav-arrow">&#8608<span class="side-nav-link">demonstration</span></div>
-    <div class="side-nav-arrow">&#8608<span class="side-nav-link">links</span></div>
+    <a href="#top"><div class="side-nav-arrow">&#8608<span class="side-nav-link">top</span></div></a>
+    <a href="#about"><div class="side-nav-arrow">&#8608<span class="side-nav-link">about</span></div></a>
+    <a href="#demo"><div class="side-nav-arrow">&#8608<span class="side-nav-link">demonstration</span></div></a>
+    <a href="#links"><div class="side-nav-arrow">&#8608<span class="side-nav-link">links</span></div></a>
   </div>
   <!-- LANDING -->
-  <div class="landing">
+  <div class="landing" id="top">
     <div class="name-container fade-in">
       <h1 id="name-title">michael VALIER edwards</h1>
     </div>
@@ -30,7 +30,7 @@
     <img id="silhouette" src="./img/silhouette_outline1.svg" alt="">
   </div>
 <!-- ABOUT -->
-  <div class="about-container">
+  <div class="about-container" id="about">
   <img id="cartoon-me" src="./img/mve_head.svg" alt="">
     <div class="about-box" id="computer-skills">
       <h3>DEVELOPER</h3>
@@ -46,24 +46,24 @@
     </div>
   </div>
 <!-- DEMO -->
-  <div class="demo-container">
-    <img class="flip-vertical-right" id="synth" src="./img/synth.svg">
-    <div class="demo-box">
-      <h3>STOPWATCH</p>
-      <iframe width="100%" height="360" src="https://jsfiddle.net/burnthair/25k3zh6j/91/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-    </div>
-    <div class="demo-box">
-      <p>burger</p>
-    </div>
-    <div class="demo-box">
-      <p>something</p>
-    </div>
-    <div class="demo-box">
-      <p>else</p>
-    </div>
+  <div class="demo-container" id="demo">
+    <div id="overlay"></div>
+      <img class="flip-vertical-right" id="synth" src="./img/synth.svg">
+      <div class="demo-box">
+        <h3>STOPWATCH</h3>
+        <iframe width="100%" height="90%" src="https://jsfiddle.net/burnthair/25k3zh6j/91/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </div>
+      <div class="demo-box">
+        <h3>BURGER</h3>
+        <div class="whitebox"></div>
+      </div>
+      <div class="demo-box">
+        <h3>SIGNS</h3>
+      </div>
+
   </div>
 <!-- LINKS -->
-  <div class="link-container">
+  <div class="link-container" id="links">
     <a class="link-logo" href="https://github.com/burnthair" target="_blank"><img src="./img/githublogo.png" alt=""></a>
     <a class="link-logo" href="https://soundcloud.com/mvedwards" target="_blank"><img src="./img/soundcloudlogo.png" alt=""></a>
     <a class="link-logo" href="https://www.linkedin.com/in/michaelvedwards/"><img src="./img/linkedinlogo.png" alt=""></a>

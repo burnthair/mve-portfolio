@@ -6,7 +6,7 @@ $(document).ready(function() {
     docHeight = $('body').height(),
     winHeight = $(window).height();
     var totalScroll = (winTop/(docHeight-winHeight))*100;
-    $(".KW_progressBar").css("height",totalScroll+"%");
+    $(".KW_progressBar").css("width",totalScroll+"%");
   });
   $(".side-nav").hover(
     function() {
@@ -16,7 +16,11 @@ $(document).ready(function() {
       $(".side-nav-link").fadeOut(400);
     }
   );
-  $(".demo-box").click(function() {
-
+  $(".demo-box").mouseenter(function() {
+    $(".demo-box").css("z-index", "10")
+    $(this).css("z-index","1000")
+    $("#overlay").fadeTo(100, 0.3);
+  }).mouseleave(function() {
+    $("#overlay").fadeOut(100);
   });
 });
