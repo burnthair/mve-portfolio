@@ -2,7 +2,7 @@ $(document).ready(function() {
   // Apply lettering() to the name title
   $("#name-title").lettering();
   // Full opacity for silhouette
-  $("#silhouette").fadeIn(777);
+  $("#silhouette").fadeIn(1414);
   $("#silhouette1").fadeIn(555);
   $("#silhouette2").fadeIn(999);
   $("#silhouette1").fadeOut(999);
@@ -17,9 +17,9 @@ $(document).ready(function() {
   });
   // Functionality to fade in and out text on the side navigation bar
   $(".side-nav").hover(function() {
-      $(".side-nav-link").fadeIn(400);
+      $(".side-nav-hidden").fadeIn(400);
     }, function() {
-      $(".side-nav-link").fadeOut(400);
+      $(".side-nav-hidden").fadeOut(400);
     }
   );
   // Functionality to "light focus" the hovered demo box
