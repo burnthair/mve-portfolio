@@ -30,5 +30,6 @@ $(document).ready(function() {
   }).mouseleave(function() {
     $("#overlay").fadeOut(100);
   });
+  $(".carousel").slick();
 
 });
