@@ -20,30 +20,34 @@ h1 {font-family: 'Forum', serif;}
 h3, p, span.side-nav-link {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
 h3 {letter-spacing: 0.6vw; font-size: 0.7vw;}
 .side-nav {position: fixed; left: 0; top: 0; height: 100vh; width: 2vw; z-index: 9999; background-color: #848484; overflow: hidden; box-shadow: 0.1vw 0 0.4vw #222; transition: all 0.4s;}
-.side-nav-arrow {position: relative; left: 0%; margin-top: 20px; color: white;}
+.side-nav-arrow {position: relative; left: 4%; margin-top: 20px; color: white;}
 .side-nav-link {display: none; font-size: 1rem;}
 .side-nav:hover {width: 10%; transition: all 0.4s;}
 .landing {width: 100vw; height: 100vh; max-width: 100%; z-index: 100; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #fff}
-.name-container {width: min-content; text-align: left; margin: 0 auto; border-bottom: 0.5vw solid #222; padding-bottom: 1%; color: #222;}
+.name-container {width: min-content; text-align: left; margin: 0 auto; z-index: 10; border-bottom: 0.5vw solid #222; padding-bottom: 1%; color: #222;mix-blend-mode: difference;}
 .name-container h1 {font-size: 7vw; line-height: 0.75;}
 .char1, .char2, .char3, .char4, .char5, .char6 {margin-right: 1.05%;}
 .char9, .char10, .char11, .char12, .char13 {margin-right: 2.7%;}
 /*.char15, .char16, .char17, .char18, .char19, .char20, .char21 {margin-right: 0.3%;}*/
 .char22 {display: inline-block; -webkit-transform: rotate(20deg);}
-.job-title-container h3 {margin-top: 4%; color: #848484;}
+.job-title-container {position: relative; z-index: 10;}
+.job-title-container h3 {margin-top: 4%; color: #222;}
 .about-container {position: relative; height: 100vh; display: flex; flex-flow: column nowrap; justify-content: space-around;}
-.about-box {display: inline-block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #222; box-shadow: 0.05vw 0.1vw 0.13vw #000; transition: all 0.3s;}
-.about-box:hover {transform: scale(1.02,1.02) translateY(-2%); box-shadow: 0.1vw 0.2vw 0.26vw #000, -0.05vw 0.1vw 0.26vw #000; transition: all 0.3s;}
+.about-box {display: inline-block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #222; box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); transition: all 0.3s;}
+.about-box:hover {transform: scale(1.02,1.02) translateY(-2%); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); transition: all 0.3s;}
 .about-box p {margin: 4%;}
 .demo-container {position: relative; width: 100vw; height: 100vh; max-width: 100%; display: flex; justify-content: center; align-items: center; flex-flow: row wrap; justify-content: space-around; background-color: white}
-.demo-box {display: inline-block; width: 25%; height: 60vh; z-index: 100; box-shadow: 0.05vw 0.1vw 0.13vw #000; background-color: #222; transition: all 0.3s;}
+.demo-box {display: inline-block; width: 27.5%; height: 60vh; z-index: 100; box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); background-color: #222; transition: all 0.3s;}
 .whitebox {width: 100%; height: 90%; content: ""; background-color: white;}
-.link-container {display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-around; height: 100vh;}
-a.link-logo {width: 6%;}
+.link-container {display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-around; background-image: url("../img/mountains2.svg"); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh;}
+a.link-logo {width: 12%; transform: translate(0vw, 0vh); filter: drop-shadow(0 0 0 0); transition: 0.4s;}
 a.link-logo img {width: 100%;}
+a.link-logo img:hover {mix-blend-mode: difference; transform: translateY(-2vh); filter: drop-shadow(0 2vh 0 rgba(34,34,34,0.6)); transition: 0.4s;}
 
 #skills-container {display: inline-block; width:}
-#silhouette {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 28%; opacity:0.2}
+#silhouette {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 28%; display: none; z-index: 2;}
+#silhouette1 {position: absolute; top: 51%; left: 51%; transform: translate(-51%, -51%); width: 28%; display: none; z-index: 2; mix-blend-mode: difference;}
+#silhouette2 {position: absolute; top: 49%; left: 49%; transform: translate(-49%, -49%); width: 28%; display: none; z-index: 2; mix-blend-mode: difference;}
 #cartoon-me {position: fixed; top: -24%; left: 0; z-index: -1; width: 100vw;}
 #overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #222; opacity: 0; display: none; z-index: 20;}
 #synth {position: absolute; transform: translate(-50%, -50%); width: 80%; opacity: 0.2;}

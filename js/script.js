@@ -1,6 +1,13 @@
 $(document).ready(function() {
   // Apply lettering() to the name title
   $("#name-title").lettering();
+  // Full opacity for silhouette
+  $("#silhouette").fadeIn(777);
+  $("#silhouette1").fadeIn(555);
+  $("#silhouette2").fadeIn(999);
+  $("#silhouette1").fadeOut(999);
+  $("#silhouette2").fadeOut(555);
+  // Functionality for the bottom progress bar
   $(window).scroll(function() {
     var winTop = $(window).scrollTop(),
     docHeight = $('body').height(),
@@ -8,14 +15,14 @@ $(document).ready(function() {
     var totalScroll = (winTop/(docHeight-winHeight))*100;
     $(".KW_progressBar").css("width",totalScroll+"%");
   });
-  $(".side-nav").hover(
-    function() {
+  // Functionality to fade in and out text on the side navigation bar
+  $(".side-nav").hover(function() {
       $(".side-nav-link").fadeIn(400);
-    },
-    function() {
+    }, function() {
       $(".side-nav-link").fadeOut(400);
     }
   );
+  // Functionality to "light focus" the hovered demo box
   $(".demo-box").mouseenter(function() {
     $(".demo-box").css("z-index", "10")
     $(this).css("z-index","1000")
@@ -23,4 +30,5 @@ $(document).ready(function() {
   }).mouseleave(function() {
     $("#overlay").fadeOut(100);
   });
+
 });
