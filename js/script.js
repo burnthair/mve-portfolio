@@ -26,7 +26,7 @@ $(document).ready(function() {
   $(".demo-box").mouseenter(function() {
     $(".demo-box").css("z-index", "10")
     $(this).css("z-index","1000")
-    $("#overlay").fadeTo(100, 0.3);
+    $("#overlay").fadeTo(100, 0.1);
   }).mouseleave(function() {
     $("#overlay").fadeOut(100);
   });

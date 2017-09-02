@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>michael valier edwards - front-end web developer</title>
-  <link rel="stylesheet" href="slick/slick.css"/ type="text/css">
+  <link rel="stylesheet" href="slick/slick.css" / type="text/css">
+  <link rel="stylesheet" href="./css/shift.css" type="text/css">
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
 </head>
+
 <body>
   <!-- SIDE NAVIGATION -->
   <div class="side-nav">
     <div class="KW_progressContainer">
       <div class="KW_progressBar"></div>
     </div>
-    <a href="#top"><div class="side-nav-arrow">&#8608<h3 class="side-nav-link side-nav-hidden">TOP</h3></div></a>
-    <a href="#about"><div class="side-nav-hidden side-nav-arrow">&#8608<h3 class="side-nav-link side-nav-hidden">ABOUT</h3></div></a>
-    <a href="#demo"><div class="side-nav-hidden side-nav-arrow">&#8608<h3 class="side-nav-link side-nav-hidden">DEMO</h3></div></a>
-    <a href="#links"><div class="side-nav-hidden side-nav-arrow">&#8608<h3 class="side-nav-link side-nav-hidden">LINKS</h3></div></a>
+    <a href="#top">
+      <div class="side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">TOP</h3></div>
+    </a>
+    <a href="#about">
+      <div class="side-nav-hidden side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">ABOUT</h3></div>
+    </a>
+    <a href="#demo">
+      <div class="side-nav-hidden side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">DEMO</h3></div>
+    </a>
+    <a href="#links">
+      <div class="side-nav-hidden side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">LINKS</h3></div>
+    </a>
   </div>
   <!-- LANDING -->
   <div class="landing" id="top">
@@ -32,9 +47,9 @@
     <img id="silhouette1" src="./img/silhouette_fill1.svg" alt="">
     <img id="silhouette2" src="./img/silhouette_fill1.svg" alt="">
   </div>
-<!-- ABOUT -->
+  <!-- ABOUT -->
   <div class="about-container" id="about">
-  <img id="cartoon-me" src="./img/mve_head.svg" alt="">
+    <img id="cartoon-me" src="./img/mve_head.svg" alt="">
     <div class="about-box" id="computer-skills">
       <h3>DEVELOPER</h3>
       <p>From the start I have been obsessed. I love the powerful combination of visual aesthetic and functional logic the front-end languages provide.</p>
@@ -48,42 +63,54 @@
       <p>So far I've managed to keep all of my fingers. I have taken classes in woodworking, and have dabbled in electronics.</p>
     </div>
   </div>
-<!-- DEMO -->
+  <!-- DEMO -->
   <div class="demo-container" id="demo">
     <div id="overlay"></div>
-      <img class="flip-vertical-right" id="synth" src="./img/synth.svg">
-      <div class="demo-box">
-        <h3>STOPWATCH</h3>
-        <iframe width="100%" height="90%" src="https://jsfiddle.net/burnthair/25k3zh6j/91/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <div class="demo-box">
+      <h3>STOPWATCH</h3>
+      <iframe width="100%" height="90%" src="https://jsfiddle.net/burnthair/25k3zh6j/91/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    </div>
+    <div class="demo-box">
+      <h3>BURGER</h3>
+      <div class="shift-play" id="shift-container">
+        <figure>
+          <img id="burger-bun-top" class="shift-element" data-animation="shift_enterDownward" data-delay="2.33" data-duration="1" src="./img/burger_bun_top.svg">
+          <img id="burger-tomato-2" class="shift-element" data-animation="shift_enterDownward" data-delay="2" data-duration="1" src="./img/burger_tomato_2.svg">
+          <img id="burger-tomato-1" class="shift-element" data-animation="shift_enterDownward" data-delay="1.67" data-duration="1" src="./img/burger_tomato_1.svg">
+          <img id="burger-lettuce-2" class="shift-element" data-animation="shift_enterDownward" data-delay="1.33" data-duration="1" src="./img/burger_lettuce_2.svg">
+          <img id="burger-lettuce-1" class="shift-element" data-animation="shift_enterDownward" data-delay="1" data-duration="1" src="./img/burger_lettuce_1.svg">
+          <img id="burger-mustard" class="shift-element" data-animation="shift_enterDownward" data-delay="0.67" data-duration="1" src="./img/burger_mustard.svg">
+          <img id="burger-patty" class="shift-element" data-animation="shift_enterDownward" data-delay="0.33" data-duration="1" src="./img/burger_patty.svg">
+          <img id="burger-bun-bottom" class="shift-element" data-animation="shift_enterDownward" data-delay="0" data-duration="1" src="./img/burger_bun_bottom.svg">
+          <img id="burger-shadow" class="shift-element" data-animation="shift_shadow" data-delay="0" data-duration="3.33" src="./img/burger_shadow.svg">
+        </figure>
       </div>
-      <div class="demo-box">
-        <h3>BURGER</h3>
-        <div class="whitebox"></div>
+    </div>
+    <div class="demo-box">
+      <h3>SIGNS</h3>
+      <div class="carousel-container">
+        <figure class="carousel">
+          <img class="carousel-image" src="./img/jampickle.png" alt="">
+          <img class="carousel-image" src="./img/mixnmatch.png" alt="">
+          <img class="carousel-image" src="./img/takebackgarden.png" alt="">
+          <img class="carousel-image" src="./img/clothes.png" alt="">
+        </figure>
       </div>
-      <div class="demo-box">
-        <h3>SIGNS</h3>
-        <div class="carousel-container">
-          <figure class="carousel">
-            <img class="carousel-image" src="./img/jampickle.png" alt="">
-            <img class="carousel-image" src="./img/mixnmatch.png" alt="">
-            <img class="carousel-image" src="./img/takebackgarden.png" alt="">
-            <img class="carousel-image" src="./img/clothes.png" alt="">
-          </figure>
-        </div>
-      </div>
-
+    </div>
   </div>
-<!-- LINKS -->
+  <!-- LINKS -->
   <div class="link-container" id="links">
     <a class="link-logo" href="https://github.com/burnthair" target="_blank"><img src="./img/githublogo.png" alt=""></a>
     <a class="link-logo" href="https://soundcloud.com/mvedwards" target="_blank"><img src="./img/soundcloudlogo.png" alt=""></a>
     <a class="link-logo" href="https://www.linkedin.com/in/michaelvedwards/" target="_blank"><img src="./img/linkedinlogo.png" alt=""></a>
   </div>
-<!-- SCRIPTS -->
+  <!-- SCRIPTS -->
   <script type="text/javascript" src="https://use.edgefonts.net/quicksand.js"></script>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/jQuery.lettering.js"></script>
+  <script type="text/javascript" src="js/shift.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
