@@ -36,6 +36,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {line-height: 1; font-size: 24px;}
 ol, ul {list-style: none;}
 a {text-decoration: none;}
+:focus {outline: #848484 dashed 2px;}
 
 h1 {font-family: 'Forum', serif;}
 h3, p, span.side-nav-link {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
@@ -47,7 +48,7 @@ h3 {letter-spacing: 0.6vw; font-size: 0.7vw;}
 .side-nav-link {font-size: 1rem;}
 .side-nav:hover {width: 10%; transition: all 0.4s;}
 .landing {width: 100vw; height: 100vh; max-width: 100%; z-index: 100; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #fff}
-.name-container {width: min-content; text-align: left; margin: 0 auto; z-index: 10; border-bottom: 0.5vw solid #222; padding-bottom: 1%; color: #222;mix-blend-mode: difference;}
+.name-container {width: min-content; text-align: left; margin: 0 auto; z-index: 10; border-bottom: 0.5vw solid #222; padding-bottom: 1%; color: #222; mix-blend-mode: difference;}
 .name-container h1 {font-size: 7vw; line-height: 0.75;}
 .char1, .char2, .char3, .char4, .char5, .char6 {margin-right: 1.05%;}
 .char9, .char10, .char11, .char12, .char13 {margin-right: 2.7%;}

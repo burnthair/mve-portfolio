@@ -30,6 +30,7 @@ $(document).ready(function() {
   }).mouseleave(function() {
     $("#overlay").fadeOut(100);
   });
-  $(".carousel").slick();
+  $(".carousel").slick({autoplay: true,
+  autoplaySpeed: 2000});
 
 });
