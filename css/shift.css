@@ -315,9 +315,9 @@
 
 @-webkit-keyframes shift_enterDownward {
   0% {
-    -ms-transform: translate(0, -700px);
-    -webkit-transform: translate(0, -700px);
-    transform: translate(0, -700px);
+    -ms-transform: translate(0, -500%);
+    -webkit-transform: translate(0, -500%);
+    transform: translate(0, -500%);
     opacity: 0;
   }
 
@@ -334,9 +334,9 @@
 }
 @keyframes shift_enterDownward {
   0% {
-    -ms-transform: translate(0, -700px);
-    -webkit-transform: translate(0, -700px);
-    transform: translate(0, -700px);
+    -ms-transform: translate(0, -500%);
+    -webkit-transform: translate(0, -500%);
+    transform: translate(0, -500%);
     opacity: 0.5;
   }
 

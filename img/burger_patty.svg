@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -7,35 +9,39 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
+   width="115.88484mm"
+   height="88.225746mm"
+   viewBox="0 0 410.61557 312.6109"
    id="svg2"
-   viewBox="0 0 434.89875 162.00337"
-   height="45.720951mm"
-   width="122.7381mm"
+   version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="burger_patty.svg">
+   sodipodi:docname="finalprojectassets.svg">
+  <defs
+     id="defs4" />
   <sodipodi:namedview
+     id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="200.43996"
+     inkscape:cy="145.22799"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
-     id="namedview8257"
-     showgrid="false"
-     inkscape:zoom="0.49915474"
-     inkscape:cx="243.69834"
-     inkscape:cy="114.01872"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
-  <defs
-     id="defs4" />
+     showguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:object-paths="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -48,9 +54,16 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#79440a;fill-opacity:1;stroke:none;stroke-width:1.96099997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 431.34539,80.5579 c 26.21674,56.068 -97.24823,81.7235 -218.51148,81.4432 C 93.59475,161.7254 -6.56325,147.7107 0.3365,80.5579 4.8891,36.249 96.82112,0 215.84095,0 334.86077,0 412.11704,39.4355 431.34539,80.5579 Z"
-     id="path4190" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-303.23551,-3051.418)">
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path5728"
+       d="m 678.50279,3236.4537 c 21.85271,56.068 -81.06042,81.7234 -182.13843,81.4431 -99.39078,-0.2757 -182.87664,-14.2904 -177.12545,-81.4431 3.79478,-44.3089 80.42392,-80.5579 179.632,-80.5579 99.20795,0 163.60421,39.4355 179.63188,80.5579 z"
+       style="opacity:1;fill:#79440a;fill-opacity:1;stroke:none;stroke-width:1.96099997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
 </svg>

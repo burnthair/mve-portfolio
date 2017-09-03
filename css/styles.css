@@ -1,3 +1,24 @@
+/*
+  GOALS
+
+  the site becomes a single viewport. on click of a link to another section, the elements of the current page go away and the new elements populate the view.
+  on click, a "current page" variable is set, which determines which function is called to remove the elements of the current view.
+
+  the burger is responsive
+  the burger has a play button
+
+  the nav arrows fade in properly or are replaced by images
+
+  the "mountains" are split into separate images that slide in with the front of the view appearing first.
+  mouse position creates a subtle parallax on those mountains
+
+  figure out the issue with the deactivation of the "focus light" on the demo boxes
+
+  add a screen loader
+
+*/
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,7 +56,7 @@ h3 {letter-spacing: 0.6vw; font-size: 0.7vw;}
 .job-title-container {position: relative; z-index: 10;}
 .job-title-container h3 {margin-top: 4%; color: #222;}
 .about-container {position: relative; height: 100vh; display: flex; flex-flow: column nowrap; justify-content: space-around;}
-.about-box {display: inline-block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #222; box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); transition: all 0.3s;}
+.about-box {display: inline-block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #848484; box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); transition: all 0.3s;}
 .about-box:hover {transform: scale(1.02,1.02) translateY(-2%); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); transition: all 0.3s;}
 .about-box p {margin: 4%;}
 .demo-container {position: relative; width: 100vw; height: 100vh; max-width: 100%; display: flex; align-items: center; justify-content: space-around; background-color: white}
@@ -137,27 +158,30 @@ a.link-logo img:hover {mix-blend-mode: difference; transform: translateY(-1vh); 
 
 
 
-
+.burger-box {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+}
 
 
 #shift-container {
   position: relative;
-  width: 100%;
-  height: 90%;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
-  background-color: white;
 }
 
 #burger-shadow, #burger-bun-bottom, #burger-patty, #burger-mustard, #burger-lettuce-1, #burger-lettuce-2, #burger-tomato-1, #burger-tomato-2, #burger-bun-top {
  position: absolute;
 }
 
-#burger-shadow     {top: 50.0%; left: 3.0%; z-index: 5; width: 25.0%; height: 26.3%;}
-#burger-bun-bottom {top: 48.0%; left: 1.2%; z-index:10; width: 22.4%; height: 26.3%;}
-#burger-patty      {top: 42.6%; left: 1.1%; z-index:20; width: 22.4%; height: 26.0%;}
-#burger-mustard    {top: 42.5%; left: 4.8%; z-index:30; width: 16.7%; height: 20.0%;}
-#burger-lettuce-1  {top: 39.0%; left: 0.4%; z-index:40; width: 17.2%; height: 23.0%;}
-#burger-lettuce-2  {top: 38.0%; left: 6.1%; z-index:50; width: 17.2%; height: 21.1%;}
-#burger-tomato-1   {top: 40.0%; left: 0.8%; z-index:60; width: 16.7%; height: 13.8%;}
-#burger-tomato-2   {top: 35.0%; left: 6.4%; z-index:70; width: 17.2%; height: 17.1%;}
-#burger-bun-top    {top: 23.0%; left: 1.0%; z-index:80; width: 22.4%; height: 26.0%;}
+#burger-shadow     {top: 30%; left: ; z-index:  5; width: 90%; height: auto;}
+#burger-bun-bottom {top: 30%; left: ; z-index: 10; width: 90%; height: auto;}
+#burger-patty      {top: 30%; left: ; z-index: 20; width: 90%; height: auto;}
+#burger-mustard    {top: 30%; left: ; z-index: 30; width: 90%; height: auto;}
+#burger-lettuce-1  {top: 30%; left: ; z-index: 40; width: 90%; height: auto;}
+#burger-lettuce-2  {top: 30%; left: ; z-index: 50; width: 90%; height: auto;}
+#burger-tomato-1   {top: 30%; left: ; z-index: 60; width: 90%; height: auto;}
+#burger-tomato-2   {top: 30%; left: ; z-index: 70; width: 90%; height: auto;}
+#burger-bun-top    {top: 30%; left: ; z-index: 80; width: 90%; height: auto;}
