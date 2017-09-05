@@ -10,7 +10,7 @@
         n.insertRule(e[a].tagName+"#"+e[a].id+"{-webkit-animation-duration: "+d+"s; animation-duration: "+d+"s;}",0)
       }
       if(1==e[a].nodeType&&e[a].hasChildNodes()){
-        var o=e[a].childNodes;t(o)}}}function e(){this.className="shift-play"}var a=document.getElementById("shift-container");
+        var o=e[a].childNodes;t(o)}}}function e(){this.className="shift-play"}var a=document.getElementById("burger-button");
         a.addEventListener("click",e,!1);
         var i=a.childNodes,n=function(){
           var t=document.createElement("style");

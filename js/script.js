@@ -31,6 +31,6 @@ $(document).ready(function() {
     $("#overlay").fadeOut(100);
   });
   $(".carousel").slick({autoplay: true,
-  autoplaySpeed: 2000});
+  autoplaySpeed: 4000});
 
 });
